@@ -10,4 +10,4 @@
 </ul>
 <br />
 <br />
-<img src="https://github.com/JeelsBoobz/DarkFB/raw/master/Screenshot_2019-06-20-01-07-15-667_com.termux.png" />
+<img src="https://github.com/TheMagizz/DarkPremium/raw/master/Screenshot_2019-06-20-01-07-15-667_com.termux.png" />
