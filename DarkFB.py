@@ -2161,26 +2161,4 @@ def gaz(toket, enable=True):
 if __name__ == '__main__':
 	login()
 
-    print res.text
-    if '"is_shielded":true' in res.text:
-        os.system('clear')
-        print logo
-        print 52 * '\x1b[1;97m\xe2\x95\x90'
-        print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mActivated'
-        raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
-        lain()
-    else:
-        if '"is_shielded":false' in res.text:
-            os.system('clear')
-            print logo
-            print 52 * '\x1b[1;97m\xe2\x95\x90'
-            print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;91mDeactivated'
-            raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
-            lain()
-        else:
-            print '\x1b[1;91m[!] Error'
-            keluar()
-
-
-if __name__ == '__main__':
-	login()
+   
